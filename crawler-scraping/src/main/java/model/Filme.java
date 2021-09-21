@@ -1,20 +1,19 @@
-package the.biagi.crawler;
-
-import org.w3c.dom.stylesheets.LinkStyle;
+package model;
 
 import java.util.List;
 
 public class Filme {
+
     private String nomeFilme;
     private Double nota;
-    private List<String> diretores;
+    private List<String> diracao;
     private List<String> elencoPrincipal;
     private String comentarioPositivo;
 
-    public Filme(String nomeFilme, Double nota, List<String> diretores, List<String> elencoPrincipal, String comentarioPositivo) {
+    public Filme(String nomeFilme, Double nota, List<String> diracao, List<String> elencoPrincipal, String comentarioPositivo) {
         this.nomeFilme = nomeFilme;
         this.nota = nota;
-        this.diretores = diretores;
+        this.diracao = diracao;
         this.elencoPrincipal = elencoPrincipal;
         this.comentarioPositivo = comentarioPositivo;
     }
@@ -22,7 +21,7 @@ public class Filme {
     public Filme() {
     }
 
-    public String getNomeFilme() {
+    public String getNomeFilme(String s) {
         return nomeFilme;
     }
 
@@ -38,12 +37,12 @@ public class Filme {
         this.nota = nota;
     }
 
-    public List<String> getDiretores() {
-        return diretores;
+    public List<String> getDiracao() {
+        return diracao;
     }
 
-    public void setDiretores(List<String> diretores) {
-        this.diretores = diretores;
+    public void setDiracao(List<String> diracao) {
+        this.diracao = diracao;
     }
 
     public List<String> getElencoPrincipal() {
@@ -60,5 +59,16 @@ public class Filme {
 
     public void setComentarioPositivo(String comentarioPositivo) {
         this.comentarioPositivo = comentarioPositivo;
+    }
+
+    @Override
+    public String toString() {
+        return  "----------------------------------------------------\n" +
+                "Nome do Filme: " + nomeFilme + "\n" +
+                "Nota: " + nota + "\n" +
+                "Direção: " + diracao + "\n" +
+                "Elenco principal: " + elencoPrincipal + "\n" +
+                "Comentário positivo: " + comentarioPositivo + "\n" +
+                "----------------------------------------------------\n";
     }
 }
