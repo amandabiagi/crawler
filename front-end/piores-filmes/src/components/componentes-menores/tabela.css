@@ -15,12 +15,13 @@
 .tabelaPrincipal{
     margin-left: 5%;
     width: 90%;
+    margin-top: 5%;
 }
 
 .tabelaPrincipal th{
     margin-top: 20%;
     color:  #656344;
-    border: 1px solid #656344;  
+    border: 1px solid #656344;
 }
 
 

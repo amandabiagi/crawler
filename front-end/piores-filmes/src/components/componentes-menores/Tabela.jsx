@@ -6,23 +6,27 @@ export default(props) =>{
     const filmes = props.obj;
 
 function tabela(){
- return filmes.map((filme) => {
+ return filmes.map((filme, i) => {
      return(
          <tr className = "trValor">
+             <td>{++i + "º"}</td>
              <td>{filme.nomeFilme}</td>
-             <td>{filme.nota}</td>
+             <td>{filme.nota.toFixed(2)}</td>
              <td>{filme.direcao}</td>
              <td>{filme.elencoPrincipal}</td>
              <td>{filme.comentarioPositivo}</td>
          </tr>
+         
      )
  }) 
+
 }  
     return(
         <div>
             <table className = 'tabelaPrincipal'>
                 <thead>
-                    <tr>        
+                    <tr>
+                        <th>POSIÇÃO</th>        
                         <th>NOME DO FILME</th>
                         <th>AVALIAÇÃO</th>
                         <th>DIRETOR</th>
