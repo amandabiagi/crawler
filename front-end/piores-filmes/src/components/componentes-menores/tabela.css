@@ -1,0 +1,26 @@
+.trValor{
+    background-color: #918F8F;
+}
+
+.trValor td{
+    text-align: center;   
+    border: 1px solid rgb(70, 161, 204);
+}
+
+.trValor td{
+    text-align: center;   
+    border: 1px solid #656344;
+} 
+
+.tabelaPrincipal{
+    margin-left: 5%;
+    width: 90%;
+}
+
+.tabelaPrincipal th{
+    margin-top: 20%;
+    color:  #656344;
+    border: 1px solid #656344;  
+}
+
+
