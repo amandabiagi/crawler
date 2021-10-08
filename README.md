@@ -1,6 +1,6 @@
 # Projeto Crawler 
 
-## Criado para processo seletivo da empresa -----
+## Criado para processo seletivo.
 
 ___
 
