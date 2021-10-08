@@ -16,7 +16,7 @@ ___
 
 * Elenco principal
 
-- ao menos 1 Comentário positivo
+- Ao menos 1 Comentário positivo
 
 ___
 
